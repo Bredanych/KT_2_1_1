@@ -23,7 +23,7 @@ class MainKtTest {
         val summ: Int = 2500
         val result = taxes(payType, summMonth, summ)
 
-        assertEquals(35, result)
+        assertEquals(100, result)
 
 
     }

@@ -15,6 +15,7 @@ class MainKtTest {
 
 
     }
+
     @Test
     fun taxes_visa_var2() {
         val payType: String = "Visa"
@@ -30,21 +31,23 @@ class MainKtTest {
     @Test
     fun taxes_Mastercard() {
         val payType: String = "Mastercard"
-        var summMonth: Int = 800000
+        val summMonth: Int = 800000
         val summ: Int = 25000
-        var result = taxes(payType, summMonth, summ)
+        val result = taxes(payType, summMonth, summ)
 
         assertEquals(170, result)
     }
+
     @Test
     fun taxes_Mastercard_var2() {
         val payType: String = "Mastercard"
-        var summMonth: Int = 0
+        val summMonth: Int = 0
         val summ: Int = 25000
-        var result = taxes(payType, summMonth, summ)
+        val result = taxes(payType, summMonth, summ)
 
         assertEquals(0, result)
     }
+
     @Test
     fun taxes_VK_Pay() {
         val payType: String = "VK Pay"
